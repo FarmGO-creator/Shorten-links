@@ -1,10 +1,9 @@
 import React from 'react';
+import ShortLink from "./containers/ShortLink/ShortLink";
 
 function App() {
   return (
-    <div className="App">
-123
-    </div>
+    <ShortLink/>
   );
 }
 
