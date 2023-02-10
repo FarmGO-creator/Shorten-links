@@ -13,12 +13,13 @@ const ShortLink = () => {
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     await dispatch(postLink(value));
+    setValue('');
   };
 
   if (link) {
     newLink = (
       <a href={'http://localhost:8000/' + link.shortUrl}>http://localhost:3000/{link.shortUrl}</a>
-    )
+    );
   }
 
 
