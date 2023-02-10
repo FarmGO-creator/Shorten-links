@@ -11,7 +11,7 @@ interface ShortLinkState {
 const initialState:ShortLinkState = {
   url: null,
   loading: false,
-}
+};
 
 export const shortLinkSlice = createSlice({
   name: 'shortLink',
